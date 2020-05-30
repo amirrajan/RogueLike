@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "VT323", monospace;
+}
+
+body {
+    text-align: center;
+    height: 100%;
+}
+
+#character-select__wrapper {
+    width: 576px;
+    height: 768px;
+    margin: 100px auto;
+    position: relative;
+    z-index: 0;
+    background: linear-gradient(#e16a6a, #e9af39);
+}
+
+#clouds {
+    animation: sway;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    transition: ease-in-out;
+    z-index: -1;
+}
+
+#floating-islands {
+    animation: gravitate;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+    transition: ease-in-out;
+    z-index: -1;
+}
+
+#birds {
+    animation: fly;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    transition: ease-in-out;
+    z-index: -1;
+}
+
+#character-select {
+    display: block;
+    margin: auto;
+    width: 256px;
+    height: 128px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#character-select h1 {
+    font-size: 40px;
+    color: #3d221c;
+}
+
+#character,
+#floating-island {
+    width: 256px;
+    height: 128px;
+}
+
+.change-char__btn {
+    position: absolute;
+    top: 90%;
+}
+
+.change-char__btn:hover {
+    cursor: pointer;
+}
+
+#next__btn {
+    right: 10%;
+    transform: scaleX(-1);
+}
+
+#prev__btn {
+    left: 10%;
+}
+
+#select-char__btn {
+    margin-top: 30px;
+    width: 100px;
+    padding: 10px;
+    font-weight: bold;
+    background: #3d221c;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: #80b623;
+    font-size: 26px;
+}
+
+#select-char__btn:hover {
+    background: #23100c;
+    cursor: pointer;
+    z-index: 100;
+    transition: ease-in-out;
+    transition-duration: .5s;
+}
+
+@keyframes sway {
+    /* With x and y movement */
+    /* 0% {left: 5%; top: 0%}
+    50% {left: 7%; top: 2%}
+    100% {left: 5%; top: 0%} */
+
+    /* With out y movement */
+    0% {
+        left: 0%;
+        top: 0%;
+    }
+    50% {
+        left: 3.5%;
+        top: 0%;
+    }
+    100% {
+        left: 0%;
+        top: 0%;
+    }
+}
+
+@keyframes fly {
+    0% {
+        right: 0%;
+        top: 0%;
+    }
+    50% {
+        right: 1%;
+        top: 4%;
+    }
+    100% {
+        right: 0%;
+        top: 0%;
+    }
+}
+
+@keyframes gravitate {
+    0% {
+        left: 1%;
+        top: 0%;
+    }
+    50% {
+        left: 2%;
+        top: 1.3%;
+    }
+    100% {
+        left: 1%;
+        top: 0%;
+    }
+}
+
+#game-window {
+    display: none;
+    background: #111;
+    /* border: 5px solid white; */  
+}

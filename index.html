@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="main.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+            rel="stylesheet"
+        />
+        <script src="js/Main.js" type="module" defer></script>
+        <title>Document</title>
+    </head>
+    <body>
+        <div id="character-select__wrapper">
+            <div id="clouds">
+                <img src="images/clouds.png" alt="" />
+            </div>
+
+            <div id="floating-islands">
+                <img src="images/mini_islands.png" alt="" />
+            </div>
+
+            <div id="birds">
+                <img src="images/birds.gif" alt="" />
+            </div>
+            <div id="character-select">
+                <h1>Character Select</h1>
+                <div id="prev__btn" class="change-char__btn">
+                    <img src="images/arrow.png" alt="" />
+                </div>
+                <div id="next__btn" class="change-char__btn">
+                    <img src="images/arrow.png" alt="" />
+                </div>
+                <div id="character">
+                    <img id="character-image" src="images/pirate.png" alt="" />
+                </div>
+                <div id="floating-island">
+                    <img src="images/floatingIsland.png" alt="" />
+                </div>
+                <button id="select-char__btn">Select</button>
+            </div>
+        </div>
+
+        <canvas id="game-window"></canvas>
+    </body>
+</html>

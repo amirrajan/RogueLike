@@ -1,0 +1,1 @@
+import { CharacterBase } from "./CharacterBase.js";
