@@ -4,7 +4,7 @@ export class Player extends CharacterBase{
     playerName;
     playerSprite; 
     constructor(playerName, playerSprite) {
-        super(3, 2, playerName, playerSprite, 0, 0);
+        super(3, 2, playerName, playerSprite, 4, 5);
     }
 
     move() {
