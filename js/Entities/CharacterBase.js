@@ -22,6 +22,7 @@ export class CharacterBase{
             if (e.key === "s") this.y++;
             if (e.key === "a") this.x--;
             if (e.key === "d") this.x++;
+            console.log("moving");
         }
     }
 

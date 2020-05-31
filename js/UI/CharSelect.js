@@ -5,14 +5,16 @@ export class CharSelect {
     charArray;
     charIndex;
     charImg;
-    player;
-    state;
-    constructor(charArray, charIndex, state) {
-        this.charArray = charArray;
-        this.charIndex = charIndex;
+    constructor() {
+        this.charArray = [
+            "images/pirate.png",
+            "images/archer.png",
+            "images/mage.png",
+            "images/barbarian.png",
+            "images/whiteknight.png",
+        ];
+        this.charIndex = 0;
         this.charImg = document.querySelector("#character-image");
-        this.player = new Player();
-        this.state = state;
     }
 
     nextChar() {
@@ -39,12 +41,13 @@ export class CharSelect {
         });
     }
 
-    selectChar() {
+    selectChar(player) {
         const selectBtn = document.querySelector("#select-char__btn");
         selectBtn.addEventListener("click", () => {
-            this.player.playerName = "Phil";
-            this.player.playerSprite = this.charIndex;
-            this.state = "running";
+            player.playerName = "Phil";
+            player.playerSprite = this.charIndex;
+            this.hideCharSelect();
+            this.displayGameWindow();
         });
     }
 
@@ -63,6 +66,10 @@ export class CharSelect {
     hideCharSelect() {
         const charSelectScreen = document.querySelector("#character-select__wrapper");
         charSelectScreen.style.display = "none";
+    }
+
+    get state() {
+        return this.state;
     }
 
     get player() {
