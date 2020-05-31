@@ -22,29 +22,6 @@ const tick = () => {
     }
 }
 
-// if(state === "character-select") {
-//     newGame.displayCharSelect();
-// } else if (state === "game-world") {
-    
-// }
 
 setInterval(tick, 15)
 
-
-
-// const characterSelection = new CharSelect(charArray, 0, "character-select");
-// characterSelection.nextChar();
-// characterSelection.prevChar();
-// characterSelection.selectChar();
-// console.log("inside of " + characterSelection.state);
-
-// if (characterSelection.state === "game-world") {
-//     console.log("entered game-world state");
-// }
-
-// const newGame = new Game();
-
-// getNextAndPrevChar();
-
-// newGame.player = confirmSelectedChar(createCharacter);
-// console.log(newGame.player);

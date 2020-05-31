@@ -44,10 +44,7 @@ export class CharSelect {
         selectBtn.addEventListener("click", () => {
             this.player.playerName = "Phil";
             this.player.playerSprite = this.charIndex;
-            // this.hideCharSelect();
-            // this.displayGameWindow();
             this.state = "running";
-            console.log("Select?");
         });
     }
 
