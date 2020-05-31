@@ -38,9 +38,7 @@ export function getNextAndPrevChar() {
 
 export function confirmSelectedChar(callback) {
     selectBtn.addEventListener("click", () => {
-        hideCharSelect();
-        displayGameWindow();
-        callback();
+        
     })
 }
 
