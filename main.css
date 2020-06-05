@@ -13,7 +13,7 @@ body {
 #character-select__wrapper {
     width: 576px;
     height: 768px;
-    margin: 100px auto;
+    margin: auto;
     /* margin: auto; */
     position: relative;
     z-index: 0;
@@ -167,8 +167,8 @@ body {
 }
 
 #game-window {
-    display: none;
+    /* display: none; */
     background: #111;
-    margin: 100px auto;
+    margin: auto;
     /* border: 5px solid white; */  
 }

@@ -3,7 +3,7 @@ import { GameWorld } from "./GameWorld.js";
 const spritesheet = new Image();
 spritesheet.src = "spritesheet.png";
 
-const gameWorld = new GameWorld(64, 9, 3, spritesheet, 0);
+export const gameWorld = new GameWorld(64, 9, 3, spritesheet, 0);
 
 gameWorld.displayCharacterSelect();
 
@@ -14,13 +14,17 @@ const draw = () => {
 }
 
 
-draw();
+const generateLevel = () => {
+    gameWorld.generateTiles();
+}
+
+
 
 
 
 gameWorld.movePlayer();
 setInterval(draw, 15);
-
+generateLevel();
 
 
 

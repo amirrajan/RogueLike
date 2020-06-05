@@ -2,6 +2,7 @@ import { Player } from "../Entities/Player.js";
 
 
 export class CharSelect {
+    // Possibly remove?
     charArray;
     charIndex;
     charImg;
@@ -11,7 +12,7 @@ export class CharSelect {
             "images/archer.png",
             "images/mage.png",
             "images/barbarian.png",
-            "images/whiteknight.png",
+            "images/whiteknight.png"
         ];
         this.charIndex = 0;
         this.charImg = document.querySelector("#character-image");
@@ -56,7 +57,7 @@ export class CharSelect {
         gameWindow.style.display = "inline-block";
     }
 
-    // TODO: Implement a way to set a player name.
+    // TODO: Implement set player name.
 
     displayGameWindow() {
         const gameWindow = document.querySelector("#game-window");
